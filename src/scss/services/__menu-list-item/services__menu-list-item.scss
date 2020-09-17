@@ -1,0 +1,9 @@
+.services__menu-list-item {
+  padding: 8px 16px;
+
+  &--active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+}

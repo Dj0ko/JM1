@@ -1,0 +1,20 @@
+.main-nav__link {
+  font-weight: 500;
+
+  &--phone {
+    margin-top: 12px;
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

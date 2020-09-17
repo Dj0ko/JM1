@@ -1,0 +1,28 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &--position {
+    margin-top: 24px;
+    @media (min-width: $tablet-width) {
+      margin-top: 32px;
+      padding: 0 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 32px;
+    }
+  }
+}
+
+@import "./__container/hero__container.scss";
+@import "./__text-wrapper/hero__text-wrapper.scss";
+@import "./__text/hero__text.scss";
+@import "./__button/hero__button.scss";
+@import "./__image/hero__image.scss";

@@ -1,0 +1,10 @@
+.brand-repair__list-item {
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 32px;
+  }
+}

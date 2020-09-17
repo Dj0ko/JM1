@@ -1,0 +1,15 @@
+.brand-repair__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 24px;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
+}

@@ -1,0 +1,12 @@
+.brand-repair__button {
+  display: none; 
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-left: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 32px;
+  }
+}

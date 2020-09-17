@@ -1,0 +1,31 @@
+.brand-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    right: 16px;
+
+    width: 40px;
+    height: 40px;
+    background: url('./../img/direct-circle.svg') no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 224px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
+}

@@ -1,0 +1,7 @@
+.page-header {
+  background-color: #ffffff;
+}
+
+@import "./__container/page-header__container.scss";
+@import "./__user-menu/page-header__user-menu.scss";
+@import "./__repair-menu/page-header__repair-menu.scss";

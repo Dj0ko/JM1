@@ -1,0 +1,15 @@
+.services {
+  position: relative;
+  padding-top: 24px;
+
+  &--position {
+    @media (min-width: $full-width) {
+      margin-left: 320px;
+      margin-top: -88px;
+    }
+  }
+}
+
+@import "./__menu-list/services__menu-list.scss";
+@import "./__menu-list-item/services__menu-list-item.scss";
+@import "./__menu-item-link/services__menu-item-link.scss";

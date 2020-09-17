@@ -1,0 +1,14 @@
+.main-nav {
+  display: flex;
+  min-height: 88px;
+  align-items: center;
+}
+
+@import "./__menu-wrapper/main-nav__menu-wrapper.scss";
+@import "./__menu-content-wrapper/main-nav__menu-content-wrapper.scss";
+@import "./__list-item/main-nav__list-item.scss";
+@import "./__link/main-nav__link.scss";
+@import "./__logo/main-nav__logo.scss";
+@import "./__user-menu/main-nav__user-menu.scss";
+@import "./__lang-list/main-nav__lang-list.scss";
+@import "./__button/main-nav__button.scss";

@@ -1,0 +1,29 @@
+.main-nav__list-item {
+  padding: 16px 0;
+
+  &--active {
+    position: relative;
+    color: #7E7E82;
+
+    &::before {
+      content: "";
+  
+      position: absolute;
+      left: -17px;
+      top: 12px;
+      width: 4px;
+      height: 32px;
+  
+      background-color: #41F6D7;
+      border-radius: 2px;
+  
+      @media (min-width: $tablet-width) {
+        left: -25px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        left: -33px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.main-nav__logo {
+  margin-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 43px;
+  }
+
+  @media (min-width: $full-width) {
+    display: block;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.hero__text-wrapper {
+  width: auto;
+  height: 90px;
+  margin-bottom: 16px;
+  overflow-y: hidden;
+
+  @media (min-width: $tablet-width) {
+    height: 134px;
+    margin-right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 155px;
+    margin-right: 36px;
+  }
+}

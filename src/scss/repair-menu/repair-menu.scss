@@ -1,0 +1,14 @@
+.repair-menu {
+  display: flex;
+  width: 96px;
+  min-height: 40px;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  @media (min-width: $full-width) {
+    width: 368px;
+  }
+}
+
+@import "./__item/repair-menu__item.scss";
+@import "./__link/repair-menu__link.scss";

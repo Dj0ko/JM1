@@ -1,0 +1,57 @@
+.repair-menu__link {
+  position: relative;
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--repair-icon {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #FF3E79 url("./../img/repair-icon.svg") no-repeat center center;
+      border: none;
+      border-radius: 20px;
+
+      @media (min-width: $full-width) {
+        top: -10px;
+        right: -47px;
+      }
+    }
+  }
+
+  &--repair-status-icon {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #FF3E79 url("./../img/repair-status-icon.svg") no-repeat center center;
+      border: none;
+      border-radius: 20px;
+
+      @media (min-width: $full-width) {
+        top: -10px;
+        right: -47px;
+      }
+    }
+  }
+}
+
+
+.repair-menu__link span {
+  display: none;
+
+  @media (min-width: $full-width) {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: inline;
+    color: #1B1C21;
+  }
+}

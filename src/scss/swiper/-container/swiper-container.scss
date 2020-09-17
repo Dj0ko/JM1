@@ -1,0 +1,9 @@
+.swiper-container {
+  width: auto;
+  height: 110px;
+  padding: 16px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
