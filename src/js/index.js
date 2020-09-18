@@ -1,12 +1,12 @@
 import '../scss/style.scss';
 import toggleTextHeight from './modules/toggleTextHeight';
-import toggleBrandHeight from './modules/toggleBrandHeight';
+import toggleRepairsHeight from './modules/toggleRepairsHeight';
 import toggleMenu from './modules/toggleMenu';
 //изменение высоты текста
 toggleTextHeight();
 
 //Раскрытие списка ремонта брендов
-toggleBrandHeight();
+toggleRepairsHeight();
 
 //Открытие/закрытие меню
 toggleMenu();

@@ -1,20 +1,23 @@
-.brand-link {
+.repair-link {
   position: relative;
   display: flex;
   align-items: center;
   width: 240px;
   height: 72px;
-  padding: 0 16px;
+  padding: 16px;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
 
   &::after {
     content: "";
     position: absolute;
 
     right: 16px;
+    bottom: 16px;
 
     width: 40px;
     height: 40px;
@@ -27,5 +30,13 @@
 
   @media (min-width: $desktop-width) {
     width: 240px;
+  }
+
+  &--height-160 {
+    height: 160px;
+  }
+
+  &--align-items-flex-start {
+    align-items: flex-start;
   }
 }
