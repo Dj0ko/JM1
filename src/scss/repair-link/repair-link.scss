@@ -2,41 +2,78 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 240px;
-  height: 72px;
-  padding: 16px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: 1px solid #EAEAEA;
-  border-radius: 6px;
+  height: 100%;
   font-size: 16px;
   line-height: 24px;
+
+  &--direct-circle {
+    &::after {
+      content: "";
+      position: absolute;
+
+      right: 0;
+      bottom: 0;
+
+      width: 40px;
+      height: 40px;
+      background: url('./../img/direct-circle.svg') no-repeat;
+    }
+  }
+
+  &--order-button {
+    &::after {
+      content: "";
+      position: absolute;
+
+      right: 0;
+      bottom: 0;
+
+      width: 119px;
+      height: 32px;
+      background-color: #FF3E79;
+      border-radius: 16px;
+    }
+  }
+
+  &--align-items-flex-start {
+    align-items: flex-start;
+  }
+}
+
+.repair-link span {
+  position: absolute;
+  bottom: 4px;
+  right: 35px;
+  z-index: 1;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 
   &::after {
     content: "";
     position: absolute;
 
-    right: 16px;
-    bottom: 16px;
+    width: 6px;
+    height: 2px;
 
-    width: 40px;
-    height: 40px;
-    background: url('./../img/direct-circle.svg') no-repeat;
+    top: 9px;
+    right: -20px;
+    background-color: #fff;
+    transform: rotate(45deg);
   }
 
-  @media (min-width: $tablet-width) {
-    width: 224px;
-  }
+  &::before {
+    content: "";
+    position: absolute;
 
-  @media (min-width: $desktop-width) {
-    width: 240px;
-  }
+    width: 6px;
+    height: 2px;
 
-  &--height-160 {
-    height: 160px;
-  }
-
-  &--align-items-flex-start {
-    align-items: flex-start;
+    top: 13px;
+    right: -20px;
+    background-color: #fff;
+    transform: rotate(-45deg);
   }
 }

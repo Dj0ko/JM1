@@ -1,38 +1,38 @@
 'use strict';
 
 function toggleRepairsHeight() {
-  const brandRepairBtn = document.querySelectorAll('.brand-repair__button'),
-    brandRepairList = document.querySelectorAll('.brand-repair__list');
+  const repairBtn = document.querySelectorAll('.repair__button'),
+    repairList = document.querySelectorAll('.repair__list');
 
-  brandRepairList.forEach((item) => {
+    repairList.forEach((item) => {
     item.style.height = '176px';
   })
 
-  brandRepairBtn[0].addEventListener('click', function () {
-    if (brandRepairBtn[0].classList.contains('button--showing-more')) {
-      brandRepairList[0].style.height = 'auto';
-      brandRepairBtn[0].classList.remove('button--showing-more');
-      brandRepairBtn[0].classList.add('button--closing-more');
-      brandRepairBtn[0].textContent = 'Скрыть';
+  repairBtn[0].addEventListener('click', function () {
+    if (repairBtn[0].classList.contains('button--showing-more')) {
+      repairList[0].style.height = 'auto';
+      repairBtn[0].classList.remove('button--showing-more');
+      repairBtn[0].classList.add('button--closing-more');
+      repairBtn[0].textContent = 'Скрыть';
     } else {
-      brandRepairList[0].style.height = '176px';
-      brandRepairBtn[0].classList.remove('button--closing-more');
-      brandRepairBtn[0].classList.add('button--showing-more');
-      brandRepairBtn[0].textContent = 'Читать далее';
+      repairList[0].style.height = '176px';
+      repairBtn[0].classList.remove('button--closing-more');
+      repairBtn[0].classList.add('button--showing-more');
+      repairBtn[0].textContent = 'Читать далее';
     }
   });
 
-  brandRepairBtn[1].addEventListener('click', function () {
-    if (brandRepairBtn[1].classList.contains('button--showing-more')) {
-      brandRepairList[1].style.height = 'auto';
-      brandRepairBtn[1].classList.remove('button--showing-more');
-      brandRepairBtn[1].classList.add('button--closing-more');
-      brandRepairBtn[1].textContent = 'Скрыть';
+  repairBtn[1].addEventListener('click', function () {
+    if (repairBtn[1].classList.contains('button--showing-more')) {
+      repairList[1].style.height = 'auto';
+      repairBtn[1].classList.remove('button--showing-more');
+      repairBtn[1].classList.add('button--closing-more');
+      repairBtn[1].textContent = 'Скрыть';
     } else {
-      brandRepairList[1].style.height = '176px';
-      brandRepairBtn[1].classList.remove('button--closing-more');
-      brandRepairBtn[1].classList.add('button--showing-more');
-      brandRepairBtn[1].textContent = 'Читать далее';
+      repairList[1].style.height = '176px';
+      repairBtn[1].classList.remove('button--closing-more');
+      repairBtn[1].classList.add('button--showing-more');
+      repairBtn[1].textContent = 'Читать далее';
     }
   });
 };

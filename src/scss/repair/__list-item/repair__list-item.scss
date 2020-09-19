@@ -1,0 +1,26 @@
+.repair__list-item {
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    width: 224px;
+    height: 72px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+    margin-right: 32px;
+  }
+
+  &--height-160 {
+    height: 160px;
+  }
+
+  &--height-200 {
+    height: 200px;
+  }
+}
