@@ -1,0 +1,49 @@
+.rates__link {
+  position: relative;
+  display: inline-block;
+  width: 192px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 6px;
+    height: 2px;
+
+    top: 35px;
+    right: 65px;
+    background-color:#FF3E79;
+    transform: rotate(45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: -21px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 6px;
+    height: 2px;
+
+    top: 38px;
+    right: 65px;
+    background-color:#FF3E79;
+    transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      right: -21px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.rates__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+  }
+}
