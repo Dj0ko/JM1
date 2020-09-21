@@ -1,0 +1,10 @@
+.page-footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #D9FFF5;
+  padding-top: 16px;
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+  }
+}

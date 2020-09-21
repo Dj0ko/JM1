@@ -1,0 +1,25 @@
+.copyright__text {
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-weight: 500;
+  color: #7E7E82;
+
+  &--text-align-left {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &--text-align-right {
+    @media (min-width: $tablet-width) {
+      text-align: right;
+    }
+  }
+
+  &--width-213 {
+    @media (min-width: $tablet-width) {
+      width: 213px;
+    }
+  }
+}

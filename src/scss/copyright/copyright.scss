@@ -1,0 +1,9 @@
+.copyright {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@import "./__text/copyright__text.scss";
