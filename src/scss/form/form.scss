@@ -1,0 +1,9 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+@import "./__input/form__input.scss";
+@import "./__text/form__text.scss";
+@import "./__link/form__link.scss";
+@import "./__button/form__button.scss";

@@ -1,0 +1,18 @@
+.popup__button {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+
+  @media (min-width: $tablet-width) {
+    left: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 32px;
+  }
+
+  @media (min-width: $full-width) {
+    left: -71px;
+    top: 33px;
+  }
+}

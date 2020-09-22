@@ -1,6 +1,6 @@
 .swiper-slide {
   background-color: #ffffff;
-  border: 1px solid #EAEAEA;
+  border: 1px solid $lightgray;
   border-radius: 6px;
   width: 240px;
   height: 72px;
@@ -40,7 +40,7 @@
 
 .swiper-slide dt {
   line-height: 16px;
-  color: #7E7E82;
+  color: $gray;
 }
 
 .swiper-slide dd {

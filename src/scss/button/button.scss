@@ -55,7 +55,7 @@
     width: 40px;
     height: 40px;
 
-    background: #FF3E79 no-repeat center center;
+    background: $pink no-repeat center center;
 
     border: none;
     border-radius: 20px;
@@ -77,7 +77,7 @@
 
         width: 2px;
         height: 32px;
-        background-color: #eaeaea;
+        background-color: $lightgray;
         border-radius: 1px;
         top: 4px;
         right: -22px;
@@ -92,10 +92,6 @@
   &--opened {
     order: -1;
     background-image: url("./../img/cross.svg");
-
-    @media (min-width: $full-width) {
-      display: none;
-    }
   }
 
   &--search {
@@ -115,11 +111,58 @@
     background-image: url("./../img/profile.svg");
   }
 
+  &--service {
+    position: relative;
+    padding: 4px 19px;
+    padding-right: 32px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: $pink;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 6px;
+      height: 2px;
+
+      top: 13px;
+      right: 14px;
+      background-color: #ffffff;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 6px;
+      height: 2px;
+
+      top: 17px;
+      right: 14px;
+      background-color: #ffffff;
+      transform: rotate(-45deg);
+    }
+  }
+
   &:hover {
     opacity: 0.3;
   }
 
   &:hover {
     opacity: 0.7;
+  }
+}
+
+.main-nav__menu-content-wrapper>.button--opened {
+  @media (min-width: $full-width) {
+    display: none;
   }
 }

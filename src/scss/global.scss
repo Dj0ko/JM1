@@ -4,11 +4,12 @@ body {
   font-family: $TTLakes;
   font-size: 14px;
   line-height: 18px;
-  color: #1B1C21;
+  color:$black;
 }
 
 h1,
 h2,
+h3,
 p,
 button {
   margin: 0;
@@ -41,31 +42,3 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.swiper-container {
-  // width: auto;
-  // height: 110px;
-  // padding: 16px;
-
-  // @media (min-width: $tablet-width) {
-  //   height: 160px;
-  //   padding-top: 24px;
-  //   padding-bottom: 16px;
-  // }
-}
-
-// .swiper-wrapper {
-//   @media (min-width: $tablet-width) {
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-// }
-
-// .swiper-slide {
-//   flex-shrink: 1;
-
-//   @media (min-width: $tablet-width) {
-//     width: auto;
-//     height: auto;
-//   }
-// }

@@ -20,7 +20,7 @@
 
     top: 35px;
     right: 65px;
-    background-color:#FF3E79;
+    background-color:$pink;
     transform: rotate(45deg);
 
     @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
 
     top: 38px;
     right: 65px;
-    background-color:#FF3E79;
+    background-color:$pink;
     transform: rotate(-45deg);
 
     @media (min-width: $tablet-width) {

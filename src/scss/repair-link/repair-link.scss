@@ -22,45 +22,6 @@
     }
   }
 
-  &--order-button {
-    width: 119px;
-    height: 32px;
-
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #FF3E79;
-    border-radius: 16px;
-
-    &::after {
-      content: "";
-      position: absolute;
-
-      width: 6px;
-      height: 2px;
-
-      top: 13px;
-      right: 14px;
-      background-color: #ffffff;
-      transform: rotate(45deg);
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-
-      width: 6px;
-      height: 2px;
-
-      top: 17px;
-      right: 14px;
-      background-color: #ffffff;
-      transform: rotate(-45deg);
-    }
-  }
-
   &--align-items-flex-start {
     align-items: flex-start;
   }

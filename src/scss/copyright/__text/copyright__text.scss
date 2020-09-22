@@ -3,7 +3,7 @@
   text-align: center;
   line-height: 16px;
   font-weight: 500;
-  color: #7E7E82;
+  color: $gray;
 
   &--text-align-left {
     @media (min-width: $tablet-width) {

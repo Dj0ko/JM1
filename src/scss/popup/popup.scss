@@ -1,0 +1,23 @@
+.popup {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  background-color: #ffffff;
+  padding-top: 104px;
+
+  top: 0;
+
+  @media (min-width: 425px) {
+    width: 320px;
+  }
+
+  @media (min-width: $full-width) {
+    width: 440px;
+    padding-top: 40px;
+    right: 0;
+  }
+}
+
+@import "./__form/popup__form.scss";
+@import "./__button/popup__button.scss";

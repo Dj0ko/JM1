@@ -1,3 +1,9 @@
 .page-services {
   background-color: #f8f8f8;
+  padding-top: 24px;
+
+  @media (min-width: $full-width) {
+    padding-left: 320px;
+    margin-top: -88px;
+  }
 }

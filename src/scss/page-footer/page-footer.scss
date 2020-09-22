@@ -7,4 +7,8 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 9px;
   }
+
+  @media (min-width: $full-width) {
+    padding-left: 320px;
+  }
 }

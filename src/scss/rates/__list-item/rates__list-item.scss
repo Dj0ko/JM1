@@ -3,16 +3,17 @@
   align-items: center;
   padding: 16px 0;
   justify-content: space-between;
-  border-top: 1px solid #EAEAEA;
+  border-top: 1px solid $lightgray;
 
   &--title {
     padding: 16px 16px;
     padding-right: 135px;
     line-height: 16px;
     font-weight: 500;
-    color: #7E7E82;
+    color: $gray;
 
     @media (min-width: $desktop-width) {
+      padding-left: 24px;
       padding-right: 143px;
     }
   }
