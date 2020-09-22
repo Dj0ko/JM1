@@ -43,7 +43,7 @@
           <button type="button" class="button button--pink button--phone">
             <span class="visually-hidden">Заказать звонок</span>
           </button>
-          <button type="button" class="button button--pink button--chat">
+          <button type="button" class="button button--pink button--feedback">
             <span class="visually-hidden">Обратная связь</span>
           </button>
           <button type="button" class="button button--pink button--profile">
@@ -500,6 +500,24 @@
     <button type="button" class="popup__button button button--pink button--opened"></button>
     <form class="popup__form form">
       <input type="tel" class="form__input" name="phone" placeholder="Телефон" required></input>
+      <p class="form__text">Нажимая “отправить”, вы даете согласие на
+        <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с нашей
+        <a href="#" class="form__link">политикой конфиденциальности</a>
+      </p>
+      <button type="submit" class="form__button button button--service">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<section class="popup popup-feedback">
+  <div class="container">
+    <h3 class="title title--third">Обратная связь</h3>
+    <button type="button" class="popup__button button button--pink button--opened"></button>
+    <form class="popup__form form">
+      <input type="text" class="form__input" name="name" placeholder="Имя" required></input>
+      <input type="tel" class="form__input" name="phone" placeholder="Телефон" required></input>
+      <input type="email" class="form__input" name="email" placeholder="Электронная почта" required></input>
+      <textarea class="form__input" name="comment" placeholder="Сообщение" rows="5"></textarea>
       <p class="form__text">Нажимая “отправить”, вы даете согласие на
         <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с нашей
         <a href="#" class="form__link">политикой конфиденциальности</a>

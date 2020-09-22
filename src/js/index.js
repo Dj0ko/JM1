@@ -2,7 +2,7 @@ import '../scss/style.scss';
 import toggleTextHeight from './modules/toggleTextHeight';
 import toggleRepairsHeight from './modules/toggleRepairsHeight';
 import toggleMenu from './modules/toggleMenu';
-import openPopup from './modules/openPopup';
+import togglePopup from './modules/togglePopup';
 //изменение высоты текста
 toggleTextHeight();
 
@@ -28,6 +28,6 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-openPopup();
+togglePopup();
 
 
