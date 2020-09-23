@@ -692,9 +692,10 @@ ul {
 
 .main-nav__menu-wrapper {
   position: absolute;
+  display: flex;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 100vh;
   padding: 0 16px;
@@ -1333,18 +1334,23 @@ ul {
       width: 213px; } }
 
 .popup {
+  display: none;
+  position: fixed;
+  top: 0;
   width: 100%;
-  position: absolute;
-  z-index: 2;
+  height: 100%; }
+
+.popup__content {
+  width: 100%;
+  position: fixed;
   height: 100%;
   background-color: #ffffff;
-  padding-top: 104px;
-  top: 0; }
+  padding-top: 104px; }
   @media (min-width: 425px) {
-    .popup {
+    .popup__content {
       width: 320px; } }
   @media (min-width: 1440px) {
-    .popup {
+    .popup__content {
       width: 440px;
       padding-top: 40px;
       right: 0; } }
