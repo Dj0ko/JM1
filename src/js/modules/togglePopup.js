@@ -1,43 +1,50 @@
 'use strict';
 
-function togglePopup() {
-  const btnPhone = document.querySelector('.button--phone'),
-    btnFeedback = document.querySelector('.button--feedback'),
-    popupCall = document.querySelector('.popup-call'),
-    popupFeedback = document.querySelector('.popup-feedback'),
-    popupBtn = document.querySelector('.popup__button'),
+function togglePopup(popupClass, btnClass) {
+  //ищем необходимые элементы
+  const popup = document.querySelector(popupClass),
     header = document.querySelector('header'),
     main = document.querySelector('main'),
     footer = document.querySelector('footer');
 
-  popupCall.style.display = 'none';
-  popupFeedback.style.display = 'none';
+  //функция открытия модального окна
+  function openPopup() {
+    popup.style.display = 'block';
+    header.style.opacity = '0.1';
+    main.style.opacity = '0.1';
+    footer.style.opacity = '0.1';
+  }
 
+  //функция закрытия модального окна
+  function closePopup() {
+    popup.style.display = 'none';
+    header.style.opacity = '1';
+    main.style.opacity = '1';
+    footer.style.opacity = '1';
+  }
+
+  //обработчики событий для открытия/закрытия модальных окон
   document.addEventListener('click', (evt) => {
     let target = evt.target;
 
-    if (target.classList.contains('button--phone')) {
-      popupCall.style.display = 'block';
-      header.style.opacity = '0.1';
-      main.style.opacity = '0.1';
-      footer.style.opacity = '0.1';
-    } else if (target.classList.contains('button--feedback')) {
-      popupFeedback.style.display = 'block';
-      header.style.opacity = '0.1';
-      main.style.opacity = '0.1';
-      footer.style.opacity = '0.1';
+    if (target.classList.contains(btnClass)) {
+      openPopup();
     }
+  });
 
-    if (target.classList.contains('popup__button') && (popupCall.style.display = 'block')) {
-      popupCall.style.display = 'none';
-      header.style.opacity = '1';
-      main.style.opacity = '1';
-      footer.style.opacity = '1';
+  popup.addEventListener('click', (evt) => {
+    let target = evt.target;
+
+    if (target.classList.contains('popup__button')) {
+      closePopup();
+    } else {
+      target = target.closest('.popup__content');
+
+      if (!target) {
+        closePopup();
+      }
     }
-    if (target.classList.contains('popup__button') && (popupFeedback.style.display = 'block')) {
-      popupFeedback.style.display = 'none';
-    }
-  })
+  });
 }
 
 export default togglePopup;

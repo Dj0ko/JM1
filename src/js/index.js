@@ -28,6 +28,8 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-togglePopup();
+// Открытие/закрытие модальных окон
+togglePopup('.popup-call', 'button--phone');
+togglePopup('.popup-feedback', 'button--feedback');
 
 

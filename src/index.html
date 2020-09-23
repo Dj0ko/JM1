@@ -64,7 +64,7 @@
       <button type="button" class="button button--pink button--phone">
         <span class="visually-hidden">Заказать звонок</span>
       </button>
-      <button type="button" class="button button--pink button--chat">
+      <button type="button" class="button button--pink button--feedback">
         <span class="visually-hidden">Обратная связь</span>
       </button>
       <button type="button" class="button button--pink button--profile">
@@ -495,21 +495,24 @@
 </footer>
 
 <section class="popup popup-call">
-  <div class="container">
-    <h3 class="title title--third">Заказать звонок</h3>
-    <button type="button" class="popup__button button button--pink button--opened"></button>
-    <form class="popup__form form">
-      <input type="tel" class="form__input" name="phone" placeholder="Телефон" required></input>
-      <p class="form__text">Нажимая “отправить”, вы даете согласие на
-        <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с нашей
-        <a href="#" class="form__link">политикой конфиденциальности</a>
-      </p>
-      <button type="submit" class="form__button button button--service">Отправить</button>
-    </form>
+  <div class="popup__content">
+    <div class="container">
+      <h3 class="title title--third">Заказать звонок</h3>
+      <button type="button" class="popup__button button button--pink button--opened"></button>
+      <form class="popup__form form">
+        <input type="tel" class="form__input" name="phone" placeholder="Телефон" required></input>
+        <p class="form__text">Нажимая “отправить”, вы даете согласие на
+          <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с нашей
+          <a href="#" class="form__link">политикой конфиденциальности</a>
+        </p>
+        <button type="submit" class="form__button button button--service">Отправить</button>
+      </form>
+    </div>
   </div>
 </section>
 
 <section class="popup popup-feedback">
+  <div class="popup__content">
   <div class="container">
     <h3 class="title title--third">Обратная связь</h3>
     <button type="button" class="popup__button button button--pink button--opened"></button>
@@ -525,6 +528,7 @@
       <button type="submit" class="form__button button button--service">Отправить</button>
     </form>
   </div>
+</div>
 </section>
 
 </body>
