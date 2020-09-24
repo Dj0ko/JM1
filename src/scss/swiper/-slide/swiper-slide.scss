@@ -1,11 +1,12 @@
 .swiper-slide {
-  background-color: #ffffff;
-  border: 1px solid $lightgray;
-  border-radius: 6px;
   width: 240px;
   height: 72px;
   box-sizing: border-box;
   margin-right: 16px;
+
+  background-color: $white;
+  border: 1px solid $lightgray;
+  border-radius: 6px;
 
   @media (min-width: $tablet-width) {
     width: 224px;
@@ -29,13 +30,13 @@
 }
 
 .swiper-slide dl {
-  margin: 0;
-  padding: 16px;
-  box-sizing: border-box;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .swiper-slide dt {

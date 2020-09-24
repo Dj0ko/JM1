@@ -1,14 +1,16 @@
 .hero__image {
   width: 320px;
   height: 176px;
+
   background: url("./../img/intro-image.jpg") no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     width: 360px;
     height: 208px;
-    border-radius: 6px;
     flex-shrink: 0;
+
+    border-radius: 6px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,13 +1,14 @@
 .repair__list-item {
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
-    border: 1px solid $lightgray;
-    border-radius: 6px;
     width: 224px;
     height: 72px;
-    box-sizing: border-box;
     margin-right: 24px;
     margin-bottom: 16px;
+    box-sizing: border-box;
+
+    background-color: $white;
+    border: 1px solid $lightgray;
+    border-radius: 6px;
   }
 
   @media (min-width: $desktop-width) {

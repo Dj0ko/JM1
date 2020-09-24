@@ -4,9 +4,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
     margin-left: 24px;
     padding-top: 24px;
+
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {

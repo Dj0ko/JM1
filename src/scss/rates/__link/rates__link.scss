@@ -1,11 +1,13 @@
 .rates__link {
   position: relative;
+
   display: inline-block;
   width: 192px;
+  margin-top: 16px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -14,12 +16,12 @@
   &::after {
     content: "";
     position: absolute;
+    top: 35px;
+    right: 65px;
 
     width: 6px;
     height: 2px;
 
-    top: 35px;
-    right: 65px;
     background-color:$pink;
     transform: rotate(45deg);
 
@@ -32,12 +34,12 @@
   &::before {
     content: "";
     position: absolute;
+    top: 38px;
+    right: 65px;
 
     width: 6px;
     height: 2px;
 
-    top: 38px;
-    right: 65px;
     background-color:$pink;
     transform: rotate(-45deg);
 

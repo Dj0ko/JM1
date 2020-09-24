@@ -12,8 +12,10 @@
     &::after {
       content: "";
       position: absolute;
+
       width: 40px;
       height: 40px;
+
       background: $pink url("./../img/repair-icon.svg") no-repeat center center;
       border: none;
       border-radius: 20px;
@@ -29,8 +31,10 @@
     &::after {
       content: "";
       position: absolute;
+
       width: 40px;
       height: 40px;
+
       background: $pink url("./../img/repair-status-icon.svg") no-repeat center center;
       border: none;
       border-radius: 20px;
@@ -48,10 +52,11 @@
   display: none;
 
   @media (min-width: $full-width) {
+    display: inline;
+
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    display: inline;
     color:$black;
   }
 }

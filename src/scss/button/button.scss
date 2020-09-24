@@ -4,14 +4,17 @@
 
   &--showing-more {
     position: relative;
-    font-family: inherit;
+
     padding-left: 32px;
+
+    font-family: inherit;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     color: inherit;
-    border: none;
+
     background-color: transparent;
+    border: none;
 
     &::before {
       content: "";
@@ -22,20 +25,24 @@
 
       width: 24px;
       height: 24px;
+
       background: url("./../img/pointer.svg") no-repeat center center;
     }
   }
 
   &--closing-more {
     position: relative;
-    font-family: inherit;
+
     padding-left: 32px;
+
+    font-family: inherit;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     color: inherit;
-    border: none;
+
     background-color: transparent;
+    border: none;
 
     &::before {
       content: "";
@@ -43,11 +50,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: rotate(180deg);
 
       width: 24px;
       height: 24px;
+
       background: url("./../img/pointer.svg") no-repeat center center;
+      transform: rotate(180deg);
     }
   }
 
@@ -56,7 +64,6 @@
     height: 40px;
 
     background: $pink no-repeat center center;
-
     border: none;
     border-radius: 20px;
 
@@ -74,13 +81,14 @@
         content: "";
 
         position: absolute;
+        top: 4px;
+        right: -22px;
 
         width: 2px;
         height: 32px;
+
         background-color: $lightgray;
         border-radius: 1px;
-        top: 4px;
-        right: -22px;
       }
     }
 
@@ -113,41 +121,44 @@
 
   &--service {
     position: relative;
+
     padding: 4px 19px;
     padding-right: 32px;
+    box-sizing: border-box;
+
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
+
     background-color: $pink;
     border-radius: 16px;
-    box-sizing: border-box;
     border: none;
 
     &::after {
       content: "";
       position: absolute;
+      top: 13px;
+      right: 14px;
 
       width: 6px;
       height: 2px;
 
-      top: 13px;
-      right: 14px;
-      background-color: #ffffff;
+      background-color: $white;
       transform: rotate(45deg);
     }
 
     &::before {
       content: "";
       position: absolute;
+      top: 17px;
+      right: 14px;
 
       width: 6px;
       height: 2px;
 
-      top: 17px;
-      right: 14px;
-      background-color: #ffffff;
+      background-color: $white;
       transform: rotate(-45deg);
     }
   }

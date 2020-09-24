@@ -2,6 +2,7 @@
 
   &--first {
     position: relative;
+
     font-size: 28px;
     line-height: 40px;
 
@@ -11,6 +12,7 @@
       position: absolute;
       left: -17px;
       width: 4px;
+
       height: 40px;
 
       background-color: $blue;
@@ -29,13 +31,15 @@
   &--second {
     padding: 16px 0;
     padding-left: 16px;
+
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: $gray;
     text-transform: uppercase;
     letter-spacing: -0.2px;
-    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+
+    background: linear-gradient(90deg, $whitesmoke 1.39%, $white 100%);
 
     @media (min-width: $tablet-width) {
       padding-left: 24px;
@@ -47,10 +51,11 @@
   }
 
   &--third {
+    position: relative;
+
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
-    position: relative;
 
     &::before {
       content: "";
@@ -58,6 +63,7 @@
       position: absolute;
       left: -17px;
       top: -6px;
+
       width: 4px;
       height: 40px;
 

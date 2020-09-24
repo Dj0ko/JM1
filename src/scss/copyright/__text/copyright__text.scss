@@ -1,9 +1,10 @@
 .copyright__text {
   margin-bottom: 16px;
-  text-align: center;
+
   line-height: 16px;
   font-weight: 500;
   color: $gray;
+  text-align: center;
 
   &--text-align-left {
     @media (min-width: $tablet-width) {

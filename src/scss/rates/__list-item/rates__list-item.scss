@@ -3,11 +3,13 @@
   align-items: center;
   padding: 16px 0;
   justify-content: space-between;
+
   border-top: 1px solid $lightgray;
 
   &--title {
     padding: 16px 16px;
     padding-right: 135px;
+
     line-height: 16px;
     font-weight: 500;
     color: $gray;

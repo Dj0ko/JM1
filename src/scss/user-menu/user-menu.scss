@@ -1,18 +1,18 @@
 .user-menu {
-    width: 152px;
-    display: flex;
-    justify-content: space-between;
-    flex-shrink: 0;
+  display: flex;
+  width: 152px;
+  justify-content: space-between;
+  flex-shrink: 0;
 
-    &--display {
-      display: none;
+  &--display {
+    display: none;
 
-      @media (min-width: $tablet-width) {
-        display: flex;
-      }
-
-      @media (min-width: $full-width) {
-        display: none;
-      }
+    @media (min-width: $tablet-width) {
+      display: flex;
     }
+
+    @media (min-width: $full-width) {
+      display: none;
+    }
+  }
 }

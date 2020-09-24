@@ -5,13 +5,14 @@
     content: "";
 
     position: absolute;
+    top: 4px;
+    left: -22px;
 
     width: 2px;
     height: 32px;
+
     background-color: $lightgray;
     border-radius: 1px;
-    top: 4px;
-    left: -22px;
 
     @media (min-width: $full-width) {
       display: none;

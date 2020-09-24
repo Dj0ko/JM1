@@ -3,15 +3,17 @@
   top: 0;
   left: 0;
   z-index: 2;
+
   width: 100%;
   min-height: 100vh;
   padding: 0 16px;
   padding-bottom: 32px;
+  box-sizing: border-box;
+
   font-size: 16px;
   line-height: 24px;
-  box-sizing: border-box;
-  flex-direction: column;
-  background-color: #ffffff;
+
+  background-color: $white;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 
   &--closed {
@@ -19,11 +21,13 @@
 
     @media (min-width: $full-width) {
       display: flex;
+      flex-direction: column;
     }
   }
 
   &--opened {
     display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: 425px) {

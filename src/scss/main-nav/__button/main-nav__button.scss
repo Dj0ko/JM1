@@ -1,7 +1,8 @@
 .main-nav__button {
-  border: none;
-  background-color: transparent;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
 
   &--active {
     color: $gray;
